@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Activity 2</title>
+
+    </head>
+    <body>
+        <h2> Scope of variables in JS </h2>
+        <button onclick="myfunction()">Click here</button>
+        <p id="p1"></p>
+        <P id="p2"></P>
+        <p id="p3"></p>
+        <p id="p4"></p>
+
+    <script>
+        //global variable
+        var a=12
+
+        function myfunction(){
+            //local variable
+
+            var b=14
+
+            document.getElementById("p1").innerHTML=a;
+            document.getElementById("p2").innerHTML=b;
+        }
+
+
+        document.getElementById("p3").innerHTML=a;
+        document.getElementById("p4").innerHTML=b;
+
+
+        
+    </script>    
+
+
+
+    </body>
+</html>
