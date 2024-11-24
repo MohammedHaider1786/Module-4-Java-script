@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JS</title>
+</head>
+<body>
+    <h2>Argument objects in JS</h2>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+        var i=0;
+        var max=0;
+        function findmax(){
+            for(i=0;i<arguments.length;i++){
+                if(arguments[i]>max){
+                    max=arguments[i];
+                }
+            }
+            return max; 
+        }
+        document.getElementById("p1").innerHTML="The max value in (10, 20, 30) is "+findmax(10, 20, 30);
+    </script>
+    
+</body>
+</html>
