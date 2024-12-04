@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2</title>
+</head>
+<body>
+    <h2>Conditional statment in JS</h2>
+
+    <button onclick="myfunction()">Click me!</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+
+    <script>
+        var time= new Date().getHours();
+        var greetings="";
+        function myfunction(){
+            if(time < 10){
+                greetings="good morning";
+            }
+            else if(time < 20){
+                greetings="good evening";
+            }
+            else{
+                greetings="good night";
+            }
+            document.getElementById("p1").innerHTML="Curent hour is "+time;
+        document.getElementById("p2").innerHTML=greetings;
+
+
+        }
+
+        
+    </script>
+
+    
+</body>
+</html>
