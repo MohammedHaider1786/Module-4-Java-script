@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1</title>
+</head>
+<body>
+    <h2>Class in JS</h2>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+        class student{
+            constructor(name,year){
+                this.name=name;
+                this.year=year;
+
+            }
+            show(){
+                var date=new Date().getFullYear();
+                return "The name of the student is "+this.name+" and his age is "+(date-this.year);
+            }
+        }
+        student1=new student("Haider",2010)
+        document.getElementById("p1").innerHTML=student1.show();
+        document.getElementById("p2").innerHTML=student1.name+" was born in "+student1.year;
+    </script>
+    
+</body>
+</html>
