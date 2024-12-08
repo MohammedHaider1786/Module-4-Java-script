@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1</title>
+</head>
+<body>
+    <h2>Sortning and reversing in JS</h2>
+    <button onclick="strsort()">sort</button>
+    <button onclick="strreverse()">reverse</button>
+    <button onclick="strascending()">ascend</button>
+    <button onclick="strdescending()">descend</button>
+    <P id="p1"></P>
+    <P id="p2"></P>
+    <P id="p3"></P>
+    <P id="p4"></P>
+    <P id="p5"></P>
+    <P id="p6"></P>
+    <script>
+
+        var fruits=["Kiwi","bannana","apple","cherry","grapes"];
+        document.getElementById("p1").innerHTML="The orignal array of these fruits are "+fruits;
+        function strsort(){
+            fruits.sort()
+            document.getElementById("p2").innerHTML="The order of these fruits alphebetically are "+fruits;
+        }
+        function strreverse(){
+            fruits.reverse()
+            document.getElementById("p3").innerHTML="The order of these fruits in reverse order are "+fruits;
+        }
+
+        var num=[41,32,335,41,546,66,567,85,93,130]
+        document.getElementById("p4").innerHTML="The original order of these numbers are "+num;
+        function strascending(){
+            num.sort(function (a,b){return a-b});
+            document.getElementById("p5").innerHTML="The order of these fruits in descending order are "+num;
+        }
+        function strdescending(){
+            num.sort(function (a,b){return b-a});
+            document.getElementById("p6").innerHTML="The order of these fruits in ascending order are "+num;
+        }
+
+
+        
+
+
+    </script>
+    
+    
+    
+</body>
+</html>
