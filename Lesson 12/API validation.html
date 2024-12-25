@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2</title>
+</head>
+<body>
+    <h2>API validation in JS</h2>
+    <p>To enter this body building compition, your min weight should be atleast 80kg and max weight should be 120kg</p>
+    <input id="inp1" type="number" min="80" max="115" required>
+    <button onclick="validate()">ok</button>
+    <p id="p1"></p>
+
+    <script>
+        function validate(){
+            var inpobj=document.getElementById("inp1");
+            if(!inpobj.checkValidity()){
+                document.getElementById("p1").innerHTML=inpobj.validationMessage;
+            }
+            else{
+                document.getElementById("p1").innerHTML="Input ok";
+            }
+            }
+        
+    </script>
+    
+</body>
+</html>
